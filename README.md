@@ -36,4 +36,13 @@ Follow the steps below to set up the project locally:
 
   ```bash
   pip install -r requirements.txt
+  
+ ### 3. Run the Django Development Server
+Once the dependencies are installed, start the Django development server by running:
+
+```bash
+  python manage.py runserver
+
+
+
 
