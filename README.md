@@ -1,18 +1,39 @@
-THE WEATHER MAN PROJECT
-This is a simple Django project which displays the weather details (current + forecast + previous) of any location in the world.
+# Skyblnd: Real Time Weather Forecasting
 
-Resources Used
-Google Places JavaScript API: For the place name auto-completion
-Open Weather Maps API: For getting the weather details
-Chart.js: For plotting the charts of previous data
-AOS: For Animation on Scroll effect
-How To Use
-Follow the steps to start the local server on your machine:
+Skyblnd is a simple Django project that provides real-time weather forecasting for any location in the world. The app displays current weather conditions, weather forecast, and historical weather data.
 
-Enter Your Google API Key (./templates/core/home.html) and Open Weather Maps API KEY (./weather_details/views.py). You receive the key after you make an account in the Google Cloud Platform (and Activate Google Places JavaScript API) and Open Weather Maps
-Download and install Python 3.x
-Navigate to the repository folder
-Open the Terminal/CMD/PowerShell at the location (Shift + Right Click => Run Command Prompt/PowerShell for Windows or Right Click => Run Terminal for Linux based system)
-Run the Command 'pip install -r requirements.txt' (to download and install the dependencies)
-Run the Command 'python manage.py runserver'
-Run the website (Navigate to '127.0.0.1:8000' on a web-browser)
+## Resources Used
+- **Google Places JavaScript API**: For place name auto-completion.
+- **OpenWeatherMap API**: For fetching weather details.
+- **Chart.js**: For plotting charts of previous weather data.
+- **AOS (Animate on Scroll)**: For adding animation effects when scrolling.
+
+## Features
+- Get real-time weather data for any location.
+- View past weather conditions.
+- Interactive charts to visualize weather trends.
+- Place name auto-completion when searching.
+
+## How to Use
+
+Follow the steps below to set up the project locally:
+
+### 1. Get API Keys
+- **Google API Key**: 
+  - Visit [Google Cloud Platform](https://cloud.google.com/).
+  - Create a project and enable the **Google Places JavaScript API**.
+  - Copy your **API Key** and paste it into the `./templates/core/home.html` file.
+  
+- **OpenWeatherMap API Key**:
+  - Visit [OpenWeatherMap](https://openweathermap.org/).
+  - Create an account and generate an **API Key**.
+  - Paste the **API Key** into the `./weather_details/views.py` file.
+
+### 2. Install Dependencies
+- Install Python 3.x if it's not already installed.
+- Navigate to the project folder in your terminal/command prompt.
+- Install the required dependencies by running:
+
+  ```bash
+  pip install -r requirements.txt
+
